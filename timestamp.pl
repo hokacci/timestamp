@@ -21,7 +21,7 @@ my $template;
 my $template_with_under_sec;
 
 my $HELP = <<"EOS"
-Usage: timestamp [OPTION]... [FILE]
+Usage: timestamp [OPTION]... [FILE]...
 Convert all UNIX timestamps in text to human-readable string ad hoc.
 
 With no FILE, or when FILE is -, read standard input.
@@ -38,7 +38,7 @@ With no FILE, or when FILE is -, read standard input.
 
   -h, --help        Display this help and exit
 
-This program uses ad hoc method to find Unix timestamp.
+This program uses ad hoc method to find UNIX timestamp.
 We highly recommend that you should check the conversion first with -c option.
 EOS
 ;

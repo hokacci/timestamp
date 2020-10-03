@@ -10,10 +10,10 @@ Does the timestamp include decimal separator, or does not?
 
 There are some annoying problems with timestamp expression.😭
 
-This tool solves this problem ad hoc and convert them to human-readable expression.🎉
+This tool solves this problem ad hoc and converts them to human-readable expression.🎉
 
 ```
-Usage: timestamp [OPTION]... [FILE]
+Usage: timestamp [OPTION]... [FILE]...
 Convert all UNIX timestamps in text to human-readable string ad hoc.
 
 With no FILE, or when FILE is -, read standard input.
@@ -30,13 +30,13 @@ With no FILE, or when FILE is -, read standard input.
 
   -h, --help        Display this help and exit
 
-This program uses ad hoc method to find Unix timestamp.
+This program uses ad hoc method to find UNIX timestamp.
 We highly recommend that you should check the conversion first with -c option.
 ```
 
 ## Install
 
-`timestamp.pl` is a perl script.  
+`timestamp.pl` is a Perl script.  
 You can install this, for example,
 
 ### Linux
@@ -122,7 +122,7 @@ $ timestamp -c -q test.txt
 
 If you are not familiar with command line tool, you can use web app version.  
 [timestamp string converter](https://www.yhoka.com/app/timestamp-string-converter/) is implemented with Javascript.  
-Note that there are some differences between them.
+Note that there are some differences between web version and command line version.
 
 ## Why Perl?
 
@@ -152,8 +152,8 @@ For example, Windows users do not have both by default. But [Git for Windows](ht
 
 This script can be implemented with bash, sed, awk, time commands.  
 However, shell script can be easily complicated by use of PIPEs and temporary texts.  
-Perl script is also known to be easily complicated. But better than shell script.  
-They say Perl is good for text processing and this tools is for text processing.  
+Perl script, too, is known to be easily complicated. But better than shell script.  
+They say Perl is good for text processing, and this tools is a text processing.  
 So, I think Perl is the best language to implement this tool.
 
 ## LICENSE
