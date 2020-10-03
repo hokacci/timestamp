@@ -6,7 +6,7 @@ Do you have a log file?
 Does it have UNIX timestamp field?  
 Does it make sense?  
 Is the timestamp precision sec, or milli sec, or ...?  
-Is the timestamp include decimal separator?
+Does the timestamp include decimal separator, or does not?
 
 There are some annoying problems with timestamp expression.😭
 
