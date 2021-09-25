@@ -21,7 +21,7 @@ my $template;
 my $template_with_under_sec;
 
 my $HELP = <<"EOS"
-Usage: timestamp [OPTION]... [FILE]...
+Usage: timestamp [OPTION] [FILE]...
 Convert all UNIX timestamps in text to human-readable string ad hoc.
 
 With no FILE, or when FILE is -, read standard input.
