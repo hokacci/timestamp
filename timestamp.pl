@@ -13,6 +13,9 @@ use utf8;
 use Time::Local;
 use Getopt::Long qw(:config no_ignore_case);
 
+use strict;
+use warnings;
+
 my $under_sec_part_digit = 9;
 my $year_threshold = 2030;
 my $check = 0;
