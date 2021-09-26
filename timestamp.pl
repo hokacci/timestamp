@@ -82,16 +82,16 @@ sub proc_options {
             $template = "%d-%02d-%02dT%02d:%02d:%02dZ";
             $template_with_under_sec = "%d-%02d-%02dT%02d:%02d:%02d.%sZ";
         } else {
-            @t = localtime(time);
-            $tz_offset = timegm(@t) - timelocal(@t);
+            my @t = localtime(time);
+            my $tz_offset = timegm(@t) - timelocal(@t);
             my $sign = "+";
             if ($tz_offset < 0) {
                 $sign = "-";
                 $tz_offset = -$tz_offset;
             }
-            $tz_offset_hour = int($tz_offset / 3600);
-            $tz_offset_min = int($tz_offset / 60) % 60;
-            $tz_offset_str = sprintf "%s%02d:%02d", $sign, $tz_offset_hour, $tz_offset_min;
+            my $tz_offset_hour = int($tz_offset / 3600);
+            my $tz_offset_min = int($tz_offset / 60) % 60;
+            my $tz_offset_str = sprintf "%s%02d:%02d", $sign, $tz_offset_hour, $tz_offset_min;
             $template = "%d-%02d-%02dT%02d:%02d:%02d" . $tz_offset_str;
             $template_with_under_sec = "%d-%02d-%02dT%02d:%02d:%02d.%s" . $tz_offset_str;
         }
@@ -128,7 +128,7 @@ sub format_str {
             return sprintf $template, $year, $mon, $mday, $hour, $min, $sec;
         }
     } else {
-        $pad = $under_sec_part_digit - length($under_sec_part);
+        my $pad = $under_sec_part_digit - length($under_sec_part);
         $under_sec_part .= "0" x $pad;
         $under_sec_part = substr($under_sec_part, 0, $under_sec_part_digit);
         if ($check) {
