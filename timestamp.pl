@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 
 # timestamp.pl
-# 
+#
 # Copyright (c) 2020 Yoshihiro Hokazono
-# 
+#
 # This software is released under the MIT License.
 # http://opensource.org/licenses/mit-license.php
 
