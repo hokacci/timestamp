@@ -143,7 +143,7 @@ proc_options;
 
 while (<>) {
     chomp;
-    s/\b(\d{10}(?:\.\d+|\d{9}\b|\d{6}\b|\d{3}\b|\b))/format_str $1/ge;
+    s/(?<![\d\.])(\d{10}(?:\.\d+|\d{9}\b|\d{6}\b|\d{3}\b|\b))/format_str $1/ge;
 } continue {
     say;
 }
